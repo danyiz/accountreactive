@@ -1,0 +1,19 @@
+spring:
+  # Database
+#  datasource:
+#    driver-class-name: org.postgresql.Driver
+#    url: jdbc:postgresql://localhost:5432/postgres
+#    username: postgres
+#    password: mysecretpassword
+  # JPA properties
+  # PostgreSQL
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/postgres
+    username: postgres
+    password: mysecretpassword
+    initialization-mode: always
+  flyway:
+    enabled: true
+  springdoc:
+    swagger-ui:
+      path: /swagger-ui.html
